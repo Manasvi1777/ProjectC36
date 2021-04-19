@@ -49,7 +49,7 @@ function draw() {
 
   foodObj.display();
 
-  fedTime = database.ref("Lastfed");
+  fedTime = database.ref("LastFed");
   fedTime.on("value",function(data){
     lastFed = data.val();
   })
